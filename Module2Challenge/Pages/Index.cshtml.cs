@@ -11,8 +11,7 @@ public class IndexModel : PageModel
     public double GallonsUsed { get; set; }
     public double MPG { get; set; }
     public bool ShowResult { get; set; }
-
-        public void OnPost()
+    public void OnPost()
         {
             double milesDriven = MilesDriven;
             double gallonsUsed = GallonsUsed;
