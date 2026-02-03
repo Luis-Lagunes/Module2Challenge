@@ -9,7 +9,6 @@ public class IndexModel : PageModel
     public double MilesDriven { get; set; }
     [BindProperty]
     public double GallonsUsed { get; set; }
-
     public double MPG { get; set; }
     public bool ShowResult { get; set; }
 
@@ -17,11 +16,7 @@ public class IndexModel : PageModel
         {
             double milesDriven = MilesDriven;
             double gallonsUsed = GallonsUsed;
-
-            double MPG = milesDriven / gallonsUsed;
-            
-
-
+            MPG = milesDriven / gallonsUsed;
             ShowResult = true;
         }
     }
